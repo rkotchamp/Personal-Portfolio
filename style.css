@@ -1,0 +1,290 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+html,
+body {
+  height: 100%;
+  max-height: 100%;
+}
+.container {
+  height: calc(100%-100vh);
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/*styling Burger*/
+
+div .beg {
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  border: 1px solid black;
+  margin-top: 3px;
+}
+
+.burger {
+  display: none;
+}
+
+/*styling navigation bar*/
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding-left: 100px;
+}
+
+.logo p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+
+.logo span {
+  color: rgb(162, 49, 49);
+  font-size: 60px;
+}
+
+.logo {
+  margin-right: 100px;
+}
+
+/*styling the main content*/
+
+.main {
+  display: flex;
+  width: 100%;
+  margin: auto 25%;
+  margin-top: 50px;
+  height: 100vh;
+  max-width: 360px;
+}
+
+.pic img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  height: 100vh;
+  position: absolute;
+  margin-left: 50px;
+  margin-bottom: 0;
+}
+
+.pic #back {
+  z-index: -1;
+}
+
+button {
+  font-size: ;
+  border: 1px solid rgb(162, 49, 49);
+  padding: 10px 60px;
+  border-radius: 25px;
+  background-color: rgb(162, 49, 49);
+  color: #fff;
+  margin-top: 80px;
+}
+
+button:hover {
+  background-color: rgb(216, 110, 110);
+  border: 1px solid rgb(216, 110, 110);
+}
+
+/*nameText class styling*/
+.nameText {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  height: 100%;
+  margin-left: auto;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.one span {
+  display: inline-block;
+  color: rgb(162, 49, 49);
+  margin-bottom: 0;
+}
+
+.nameText h1 {
+  margin-bottom: 0;
+  font-size: 60px;
+}
+
+.hidden {
+  display: none;
+}
+
+.two {
+  color: rgb(52, 49, 49);
+}
+
+.nameText p {
+  margin-top: 0;
+  color: rgb(34, 33, 33);
+}
+
+.nameText .two {
+  margin-top: 0;
+}
+
+.nameText .one {
+  margin-bottom: 0;
+}
+
+.icons {
+  display: flex;
+  cursor: pointer;
+}
+
+.icons .great {
+  padding-right: 20px;
+  color: brown;
+}
+
+div .program {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  font-weight: 100px;
+  text-transform: capitalize;
+  padding: 5px;
+  color: rgb(162, 49, 49);
+}
+.icons .great:hover {
+  color: rgb(216, 110, 110);
+}
+div .program:hover {
+  color: rgb(216, 110, 110);
+}
+
+/*.second-container{
+    height: 100vh;
+    background-color: lightcyan;
+    margin-top: 0;
+}*/
+
+.content {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.navMenu ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+}
+.navOrder li {
+  padding: 20px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.navOrder li a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.navOrder li a:hover {
+  color: rgb(216, 110, 110);
+}
+.projects {
+  text-align: center;
+  font-size: 30px;
+  /* color: rgb(162, 49, 49); */
+}
+.listedProjects {
+  display: flex;
+  justify-content: center;
+}
+.listedProjects img {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+  box-shadow: rgb(216, 110, 110);
+}
+/* mobile and smaller screens */
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow: auto;
+  }
+
+  .logo {
+    color: rgb(221, 219, 219);
+  }
+
+  .burger {
+    padding-left: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+  .burger .beg {
+    background-color: rgb(221, 219, 219);
+  }
+  .burger .beg:hover {
+    background-color: rgb(169, 166, 166);
+  }
+  .navigation {
+    display: none;
+  }
+  .container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.75)),
+      url(reuben4.png);
+    background-repeat: no-repeat;
+  }
+  .icons .great {
+    color: rgb(215, 95, 95);
+  }
+  .one span {
+    color: rgb(238, 117, 117);
+  }
+
+  div .program {
+    color: rgb(215, 95, 95);
+  }
+
+  .nameText p {
+    color: rgb(221, 219, 219);
+  }
+  .nameText .two {
+    color: rgb(221, 219, 219);
+  }
+  .nameText h1 {
+    font-size: 40px;
+  }
+  .pic {
+    display: none;
+  }
+
+  .content {
+    margin-top: 20%;
+  }
+
+  .logo span {
+    color: rgb(215, 95, 95);
+  }
+
+  /* .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    width: 100%;
+    max-width: 600px;
+    z-index: 1;
+  } */
+}
