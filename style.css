@@ -78,12 +78,24 @@ div .beg {
   margin-left: 50px;
   margin-bottom: 0;
 }
-
-.pic #back {
+.stylishBackImage {
+  width: 700px;
+  height: 100vh;
+  background-color: rgb(162, 49, 49);
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  position: absolute;
+  /* transform: scaleX(0);
+  transform-origin: left; */
   z-index: -1;
+  margin-bottom: 0;
+  margin-left: 50px;
 }
 
-button {
+/* .pic #back {
+  z-index: -1;
+} */
+
+.hireButton {
   font-size: ;
   border: 1px solid rgb(162, 49, 49);
   padding: 10px 60px;
@@ -93,9 +105,16 @@ button {
   margin-top: 80px;
 }
 
-button:hover {
+.hireButton:hover {
   background-color: rgb(216, 110, 110);
   border: 1px solid rgb(216, 110, 110);
+  color: #fff;
+}
+.hireButton:focus {
+  transform: scale(0.98);
+}
+.hireButton:active {
+  transform: scale(0.9);
 }
 
 /*nameText class styling*/
@@ -103,9 +122,10 @@ button:hover {
   margin-top: 50px;
   margin-bottom: 30px;
   height: 100%;
-  margin-left: auto;
+  margin-left: 0;
   white-space: nowrap;
   max-width: 100%;
+  /* width: 100px; */
 }
 
 .one span {
@@ -218,6 +238,7 @@ div .program:hover {
   margin-right: 20px;
   box-shadow: rgb(216, 110, 110);
 }
+
 /* mobile and smaller screens */
 
 @media only screen and (max-width: 600px) {
