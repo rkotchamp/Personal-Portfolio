@@ -221,6 +221,10 @@ div .program:hover {
 .navOrder li a:hover {
   color: rgb(216, 110, 110);
 }
+
+.navOrder li a:active {
+  transform: scale(0.8);
+}
 .projects {
   text-align: center;
   font-size: 30px;
