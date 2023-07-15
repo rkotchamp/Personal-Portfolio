@@ -5,7 +5,7 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 html,
 body {
@@ -16,7 +16,7 @@ body {
   height: calc(100%-100vh);
   width: 100%;
   max-width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /*styling Burger*/
@@ -61,12 +61,17 @@ div .beg {
 /*styling the main content*/
 
 .main {
-  display: flex;
-  width: 100%;
-  margin: auto 25%;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  /* gap: 50%; */
+  /* width: 50%; */
+  margin: auto 0;
   margin-top: 50px;
-  height: 100vh;
-  max-width: 360px;
+  height: 80vh;
+  padding: 50px;
+  /* overflow-y: hidden; */
 }
 
 .pic img {
@@ -78,6 +83,7 @@ div .beg {
   margin-left: 50px;
   margin-bottom: 0;
 }
+
 .stylishBackImage {
   width: 700px;
   height: 100vh;
@@ -119,13 +125,8 @@ div .beg {
 
 /*nameText class styling*/
 .nameText {
-  margin-top: 50px;
-  margin-bottom: 30px;
-  height: 100%;
-  margin-left: 0;
+  margin-left: 30%;
   white-space: nowrap;
-  max-width: 100%;
-  /* width: 100px; */
 }
 
 .one span {
@@ -247,69 +248,71 @@ div .program:hover {
 
 @media only screen and (max-width: 600px) {
   body {
-    overflow: auto;
+    overflow-y: hidden;
   }
 
-  .logo {
-    color: rgb(221, 219, 219);
-  }
-
-  .burger {
-    padding-left: 30%;
-    display: flex;
-    flex-direction: column;
-  }
-  .burger .beg {
-    background-color: rgb(221, 219, 219);
-  }
-  .burger .beg:hover {
-    background-color: rgb(169, 166, 166);
-  }
-  .navigation {
+  .navMenu ul {
     display: none;
   }
-  .container {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.75)),
-      url(reuben4.png);
-    background-repeat: no-repeat;
+
+  .main {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 0;
   }
-  .icons .great {
-    color: rgb(215, 95, 95);
-  }
-  .one span {
-    color: rgb(238, 117, 117);
+  .nameText {
+    margin-left: 0;
   }
 
-  div .program {
-    color: rgb(215, 95, 95);
-  }
-
-  .nameText p {
-    color: rgb(221, 219, 219);
-  }
-  .nameText .two {
-    color: rgb(221, 219, 219);
-  }
   .nameText h1 {
-    font-size: 40px;
+    margin-bottom: 0;
+    font-size: 35px;
+  }
+  .nameText p {
+    font-size: 11px;
+    margin-left: 10;
+    color: #ebe9e9;
   }
   .pic {
     display: none;
   }
+  .container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url(resources/reuben.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
 
-  .content {
-    margin-top: 20%;
+  .icons .great {
+    padding-right: 20px;
+    color: rgb(223, 132, 132);
+  }
+
+  div .program {
+    color: rgb(223, 132, 132);
+  }
+  .nameText .two {
+    color: #fff;
+  }
+  .nameText span {
+    color: rgb(223, 132, 132);
+  }
+
+  .icons {
+    margin-top: 30px;
+  }
+  .logo {
+    margin-right: 300px;
+  }
+  .logo p {
+    color: #e4e1e1;
   }
 
   .logo span {
-    color: rgb(215, 95, 95);
+    color: rgb(223, 132, 132);
   }
-
-  /* .overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-    height: 100vh;
-    width: 100%;
-    max-width: 600px;
-    z-index: 1;
-  } */
 }
