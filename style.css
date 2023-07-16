@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+/* rgb(46, 46, 46); nice color*/
 
 body {
   margin: 0;
@@ -127,6 +128,7 @@ div .beg {
 .nameText {
   margin-left: 30%;
   white-space: nowrap;
+  color: rgb(46, 46, 46);
 }
 
 .one span {
@@ -145,7 +147,7 @@ div .beg {
 }
 
 .two {
-  color: rgb(52, 49, 49);
+  color: rgb(46, 46, 46);
 }
 
 .nameText p {
