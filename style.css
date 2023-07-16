@@ -248,7 +248,7 @@ div .program:hover {
 
 @media only screen and (max-width: 600px) {
   body {
-    overflow-y: hidden;
+    overflow-x: hidden;
   }
 
   .navMenu ul {
@@ -314,5 +314,9 @@ div .program:hover {
 
   .logo span {
     color: rgb(223, 132, 132);
+  }
+
+  .header {
+    margin-top: 0;
   }
 }
