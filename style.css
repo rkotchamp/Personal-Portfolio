@@ -44,19 +44,29 @@ div .beg {
   width: 100%;
   padding-left: 100px;
 }
-
+/* Logo styling  */
+.logo {
+  margin-right: 100px;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+.logo:hover {
+  transform: skew(1.3);
+}
 .logo p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
+}
+.logo p :hover {
+  transform: skew(1.3);
 }
 
 .logo span {
   color: rgb(162, 49, 49);
   font-size: 60px;
 }
-
-.logo {
-  margin-right: 100px;
+.logo span :hover {
+  transform: skew(1.3);
 }
 
 /*styling the main content*/
@@ -100,6 +110,7 @@ div .beg {
 
 /* .pic #back {
   z-index: -1;
+  
 } */
 
 .hireButton {
@@ -119,9 +130,11 @@ div .beg {
 }
 .hireButton:focus {
   transform: scale(0.98);
+  transition: transform 0.5s ease-out;
 }
 .hireButton:active {
   transform: scale(0.9);
+  transition: transform 0.5s ease-out;
 }
 
 /*nameText class styling*/
@@ -213,6 +226,14 @@ div .program:hover {
   letter-spacing: 2px;
   text-transform: capitalize;
   cursor: pointer;
+  transition: all 1s ease-in;
+}
+.navOrder li :hover {
+  /* background-color: rgb(216, 110, 110); */
+  border: 1px solid rgb(216, 110, 110);
+  border-radius: 5px;
+  padding: 8px;
+  transform: skew(1.2);
 }
 
 .navOrder li a {
