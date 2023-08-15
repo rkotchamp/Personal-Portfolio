@@ -11,14 +11,13 @@ const card8 = document.querySelector(".card--8");
 cards.forEach((card, index) => {
   card.addEventListener("mouseover", function () {
     visitLink[index].classList.toggle("visible");
-    console.log(card);
+    // console.log(card);
   });
 });
 
 cards.forEach((card, index) => {
   card.addEventListener("mouseleave", function () {
     visitLink[index].classList.toggle("visible");
-    console.log(card);
   });
 });
 // mouse hover on card done
@@ -33,5 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       SeeMoreButton.textContent = "See More";
     }
+    console.log(SeeMoreButton);
   });
 });

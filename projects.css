@@ -63,7 +63,7 @@
   height: 250px;
   background-color: rgb(46, 46, 46);
   max-width: 450px;
-  transition: all 0.4s ease-in;
+  transition: all 0.3s ease-in;
 }
 /* Grid card styling starts */
 .grids {

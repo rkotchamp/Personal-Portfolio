@@ -21,6 +21,42 @@ body {
 }
 
 /*styling Burger*/
+/* Navigation */
+.navMenu ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+}
+.navOrder li {
+  padding: 20px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 1s ease-in;
+}
+/* .navOrder li :hover {
+  /* background-color: rgb(216, 110, 110); */
+/* border: 1px solid rgb(216, 110, 110);
+  border-radius: 5px;
+  padding: 8px;
+  transform: skew(1.2);
+} */
+
+.navOrder li a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.navOrder li a:hover {
+  color: rgb(216, 110, 110);
+}
+
+.navOrder li a:active {
+  transform: scale(0.8);
+}
 
 div .beg {
   width: 30px;
@@ -214,41 +250,6 @@ div .program:hover {
   max-height: 100%;
 }
 
-.navMenu ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  cursor: pointer;
-}
-.navOrder li {
-  padding: 20px;
-  letter-spacing: 2px;
-  text-transform: capitalize;
-  cursor: pointer;
-  transition: all 1s ease-in;
-}
-.navOrder li :hover {
-  /* background-color: rgb(216, 110, 110); */
-  border: 1px solid rgb(216, 110, 110);
-  border-radius: 5px;
-  padding: 8px;
-  transform: skew(1.2);
-}
-
-.navOrder li a {
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-}
-
-.navOrder li a:hover {
-  color: rgb(216, 110, 110);
-}
-
-.navOrder li a:active {
-  transform: scale(0.8);
-}
 .projects {
   text-align: center;
   font-size: 30px;
