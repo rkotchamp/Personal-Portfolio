@@ -65,6 +65,7 @@
   max-width: 450px;
   transition: all 0.3s ease-in;
 }
+
 /* Grid card styling starts */
 .grids {
   display: flex;
@@ -86,6 +87,7 @@
 .card--1:hover::before {
   background-color: rgba(0, 0, 0, 0.5);
   content: " ";
+  border-radius: 20px;
   position: absolute;
   z-index: 1;
   top: 0;
@@ -104,6 +106,7 @@
 .card--2:hover::before {
   background-color: rgba(0, 0, 0, 0.5);
   content: " ";
+  border-radius: 20px;
   position: absolute;
   z-index: 1;
   top: 0;
@@ -122,6 +125,7 @@
 .card--3:hover::before {
   background-color: rgba(0, 0, 0, 0.5);
   content: " ";
+  border-radius: 20px;
   position: absolute;
   z-index: 1;
   top: 0;
@@ -140,6 +144,7 @@
 .card--4:hover::before {
   background-color: rgba(0, 0, 0, 0.5);
   content: " ";
+  border-radius: 20px;
   position: absolute;
   z-index: 1;
   top: 0;
@@ -158,6 +163,7 @@
 .card--5:hover::before {
   background-color: rgba(0, 0, 0, 0.5);
   content: " ";
+  border-radius: 20px;
   position: absolute;
   z-index: 1;
   top: 0;
@@ -175,6 +181,7 @@
 }
 .card--6:hover::before {
   background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
   content: " ";
   position: absolute;
   z-index: 1;
@@ -195,6 +202,7 @@
 .card--7:hover::before {
   background-color: rgba(0, 0, 0, 0.5);
   content: " ";
+  border-radius: 20px;
   position: absolute;
   z-index: 1;
   top: 0;
@@ -214,6 +222,7 @@
 .card--8:hover::before {
   background-color: rgba(0, 0, 0, 0.5);
   content: " ";
+  border-radius: 20px;
   position: absolute;
   z-index: 1;
   top: 0;

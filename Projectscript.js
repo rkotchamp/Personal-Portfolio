@@ -11,6 +11,7 @@ const card8 = document.querySelector(".card--8");
 cards.forEach((card, index) => {
   card.addEventListener("mouseover", function () {
     visitLink[index].classList.toggle("visible");
+    card.style.borderRadius = "20px";
     // console.log(card);
   });
 });
@@ -18,6 +19,7 @@ cards.forEach((card, index) => {
 cards.forEach((card, index) => {
   card.addEventListener("mouseleave", function () {
     visitLink[index].classList.toggle("visible");
+    card.style.borderRadius = "0px";
   });
 });
 // mouse hover on card done

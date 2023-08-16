@@ -156,7 +156,7 @@ div .beg {
   font-size: ;
   border: 1px solid rgb(162, 49, 49);
   padding: 10px 60px;
-  border-radius: 25px;
+  border-radius: 30px;
   background-color: rgb(162, 49, 49);
   color: #fff;
   margin-top: 80px;
@@ -242,12 +242,6 @@ div .program:hover {
   color: rgb(216, 110, 110);
 }
 
-/*.second-container{
-    height: 100vh;
-    background-color: lightcyan;
-    margin-top: 0;
-}*/
-
 .content {
   height: 100%;
   width: 100%;
@@ -276,7 +270,7 @@ div .program:hover {
 .devTools {
   width: 100%;
   height: 100vh;
-  margin-top: 120px;
+  margin-top: -5px;
   background-color: #333;
   z-index: 1;
   display: flex;
@@ -309,76 +303,114 @@ div .program:hover {
 /* mobile and smaller screens */
 
 @media only screen and (max-width: 600px) {
-  body {
-    overflow-x: hidden;
-  }
-
   .navMenu ul {
     display: none;
   }
-
   .main {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: 1fr;
-    gap: 10px;
-    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: -50px;
   }
   .nameText {
+    width: 100px;
+    height: 100px;
     margin-left: 0;
+    margin-top: -50px;
+    white-space: nowrap;
+    color: #333;
+    transform: translate(50px, 0);
+    transition: transform 1s ease-in;
   }
 
   .nameText h1 {
     margin-bottom: 0;
-    font-size: 35px;
+    font-size: 30px;
   }
   .nameText p {
-    font-size: 11px;
-    margin-left: 10;
-    color: #ebe9e9;
-  }
-  .pic {
-    display: none;
-  }
-  .container {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-      url(resources/reuben.JPG);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
+    margin-top: 0;
+    color: rgb(34, 33, 33);
+    font-size: 13px;
   }
 
-  .icons .great {
-    padding-right: 20px;
-    color: rgb(223, 132, 132);
-  }
-
-  div .program {
-    color: rgb(223, 132, 132);
-  }
-  .nameText .two {
-    color: #fff;
-  }
-  .nameText span {
-    color: rgb(223, 132, 132);
-  }
-
-  .icons {
-    margin-top: 30px;
-  }
+  /* Logo styling */
   .logo {
-    margin-right: 300px;
+    margin-right: 0;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+  }
+  .logo:hover {
+    transform: skew(1.3);
   }
   .logo p {
-    color: #e4e1e1;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 20px;
+  }
+  .logo p :hover {
+    transform: skew(1.3);
   }
 
   .logo span {
-    color: rgb(223, 132, 132);
+    color: rgb(162, 49, 49);
+    font-size: 60px;
+  }
+  .logo span :hover {
+    transform: skew(1.3);
   }
 
   .header {
+    margin-left: -100px;
     margin-top: 0;
+  }
+  .hireButton {
+    margin-top: 40px;
+  }
+
+  .pic img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    height: 80vh;
+    position: absolute;
+    margin-left: 10px;
+    transform: translate(100px, 0);
+    transition: transform 1s ease-in;
+  }
+  .stylishBackImage {
+    display: none;
+  }
+
+  .devTools {
+    width: 100%;
+    height: 100vh;
+    margin-top: -40px;
+    background-color: #333;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .devTools .langs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .tools {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+
+    transition: opacity 1s ease-in;
+  }
+
+  .techStackHeader {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(216, 110, 110);
   }
 }
