@@ -303,6 +303,9 @@ div .program:hover {
 /* mobile and smaller screens */
 
 @media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
   .navMenu ul {
     display: none;
   }
@@ -370,9 +373,9 @@ div .program:hover {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    height: 80vh;
+    height: 100vh;
     position: absolute;
-    margin-left: 10px;
+    margin-left: 0px;
     transform: translate(100px, 0);
     transition: transform 1s ease-in;
   }
@@ -383,12 +386,13 @@ div .program:hover {
   .devTools {
     width: 100%;
     height: 100vh;
-    margin-top: -40px;
+    margin-top: -10px;
     background-color: #333;
     z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: center;
   }
   .devTools .langs {
     display: flex;
@@ -398,7 +402,7 @@ div .program:hover {
 
   .tools {
     width: 300px;
-    height: 400px;
+    height: 340px;
     background-color: #fff;
     margin-left: 20px;
     margin-top: 10px;
